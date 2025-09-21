@@ -13,6 +13,8 @@ library(dplyr)
 library(ggplot2)
 library(ggwordcloud)
 library(tidytext)
+font_add(family = "a", regular = "BlackHanSans-Regular.ttf")
+showtext_auto()
 
 text2 <- readLines("president_speech.txt")
 text2 <- str_replace_all(text2, "[^가-힣]", " ") %>% str_squish() %>% as_tibble()
