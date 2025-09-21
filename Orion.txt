@@ -1,0 +1,50 @@
+Orion
+- ramco aviation
+airplane company, government
+Provides integrated aviation management software
+price : $2000 + a
+
+-traxxall
+price : 150 ~ 500
+easy to use and focus on small company
+limit function to big company
+
+Orion Strength
+- medium company, aviation school, private aviation
+- using one flatform(manage money, repair etc)
+- simple UI/UX
+- support multiple language, 
+
+Lokomotive
+- samsara
+price : software(27~33 per one), hardware(99~144 per one)
+live tracking, AI, easy to use interface
+must be long term contract
+
+- geotab
+price : maybe 20~30 per one veheicle
+strong analysis of vehicle global reseller network
+hard to use high quality function, price increase when use addon
+
+-Lokomotive
+- Specialized in the management of medium and large vehicle and equipment. 
+- select function what they want
+
+Orion
+Drone business
+	- Asset Tracking : track individual drone location, status
+	- Flight data management : manage drone flight
+	- Maintenance
+Company 
+Hanwha Systems
+- provide Drone system to korea army
+- we can provide management, repair solution to them
+Volatus Aerospace
+-provide commercial, defense industry drone
+-they provide drone for border surveillance
+- dont have a anaylsis, management flatform
+
+Lokomotive
+Electric vehicle
+
+
