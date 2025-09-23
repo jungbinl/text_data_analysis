@@ -1,13 +1,13 @@
-Atonic object
+# Atonic object
 
-characters(string)
-integers
-double(real number)
-boolean
+# characters(string)
+# integers
+# double(real number)
+# boolean
 
-vectors are the simplest non-atomic objects type in R
+# vectors are the simplest non-atomic objects type in R
 
-They consist of the antomic objects of the same type
+# They consist of the antomic objects of the same type
 x = "dadsf"
 typeof(x)
 y = 26
@@ -33,7 +33,7 @@ x = c(1,2,0)
 y = c(-3,1,7)
 
 x %*% y
-multiply and sum
+# multiply and sum
 x - y
 
 matrix(data, nrow, ncol, byrow = F)
@@ -110,9 +110,9 @@ x1[[1]]
 
 str(x1[1])
 
-NA = not available
-NaN : not a number
-Inf : infinity
+# NA = not available
+# NaN : not a number
+# Inf : infinity
 
 is.finite(x)
 is.na(x)
@@ -180,7 +180,7 @@ for(i in 1:5){
   print(i)
 }
 
-#set.seed(123)
+set.seed(123)
 y = sample(-10:10, 5, replace = T)
 
 for(i in 1 : length(y)){
@@ -328,7 +328,7 @@ apply(a, MARGIN = c(1,2), sum)
 install.packages('plotrix')
 library(plotrix)
 
-lapply(list apply)
+# lapply(list apply)
 set.seed(1234)
 x = list(a = 1:4, b = rnorm(10))
 x
@@ -343,7 +343,7 @@ lapply(x, function(bla){
   bla[ ,1]
 })
 
-sapply(simply apply)
+# sapply(simply apply)
 
 x = list(a = 1:4, b = rnorm(10), c = rnorm(20,1), d = rnorm(100,5))
 
@@ -353,13 +353,13 @@ sapply(x, mean) -> vector
 mapply(rep, 1:4, 4:1)
 mapply(rep, 1:100,100:1)
 
-tapply -> giving subdataframe by grouping
+# tapply -> giving subdataframe by grouping
 
 df = data.frame(c(7,1,3,4,2,17), c('feb', 'apr', 'may', 'feb', 'apr', 'apr'))
 colnames(df) = c('hours', 'month')
 tapply(df$hours, df$month, sum)
 
-split -> giving subdataframe
+# split -> giving subdataframe
 x = c(rnorm)
 x = c(rnorm(10), runif(10), rnorm(10,1))
 
