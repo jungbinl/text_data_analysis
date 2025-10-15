@@ -13,14 +13,14 @@ data <- raw_data %>% select(reply) %>% mutate(reply = str_replace_all(reply, "[^
 data <- data %>% unnest_tokens(input = reply, output = word, token = SimplePos22, drop = F)
 
 comment_pos <- data %>% separate_rows(word, sep = "[+]")
-comment_pos %>% select(word, reply)
+
 noun <- comment_pos %>% filter(str_detect(word, "/n")) %>% mutate(word= str_remove(word, "/.*$"))
-noun <- count(word, sort = T)
+noun %>% count(word, sort = T)
 pvpa <- comment_pos %>% filter(str_detect(word, "/pv|/pa")) %>% mutate(word = str_replace_all(word, "/.*$", "다"))
-pvpa <- pvpa %>% count(word, sort = T)
+pvpa %>% count(word, sort = T)
 comment <- bind_rows(noun, pvpa) %>% filter(str_count(word) >= 2) %>% arrange(id)
 comment <- comment %>% mutate(word = ifelse(str_detect(word, "감독") & !str_detect(word, "감독상"), "봉준호", word), word = ifelse(word == "오르다", "올리다", word), word = ifelse(str_detect(word, "축하"), "축하", word))
-comment <- comment %>% select(2,3)
+
 comment %>% count(word) %>% arrange(-n)
 
 pair <- comment %>% pairwise_count(item = word, feature = id, sort = T)
